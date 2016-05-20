@@ -1,7 +1,4 @@
 /**
- * Anne Chen
- * CS 11, Spring 2016 Lab 2
- * 
  * This program takes in numerical input (ranging from 1582 - 39999) 
  * in the form of a file or raw input from the command line. This number
  * represents a year, and the program will then calculate the day Easter 
