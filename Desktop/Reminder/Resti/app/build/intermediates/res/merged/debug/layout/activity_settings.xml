@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:padding="10dp">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etOrigin"
+        android:layout_centerVertical="true"
+        android:hint="Origin"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:layout_alignLeft="@+id/etDepDate"
+        android:layout_alignStart="@+id/etDepDate"
+        android:layout_alignRight="@+id/etDepDate"
+        android:layout_alignEnd="@+id/etDepDate" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etDestination"
+        android:layout_below="@+id/etOrigin"
+        android:hint="Destination"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:layout_alignLeft="@+id/etOrigin"
+        android:layout_alignStart="@+id/etOrigin"
+        android:layout_alignRight="@+id/etOrigin"
+        android:layout_alignEnd="@+id/etOrigin" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/etDepDate"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/etDestination"
+        android:layout_centerHorizontal="true"
+        android:hint="Departure Date" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etPass"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/etDepDate"
+        android:layout_centerHorizontal="true"
+        android:hint="Passengers" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivSun"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:id="@+id/ibSubmit"
+        android:background="@drawable/plane"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/etPass"
+        android:layout_centerHorizontal="true" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/sungif"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"/>
+</RelativeLayout>

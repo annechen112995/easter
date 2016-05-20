@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATL - AMS - BOM"
+        android:textSize="30sp"
+        android:id="@+id/tvRouteName"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delta 72"
+        android:textSize="18sp"
+        android:id="@+id/tvCompany"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tvRouteName"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tcDepart"
+        android:text="04:00 PM"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tvCompany"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tcStop"
+        android:text="12:00 AM"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tcDepart"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Departs Atlanta"
+        android:id="@+id/tvDLabel"
+        android:layout_toRightOf="@+id/tcDepart"
+        android:layout_below="@+id/tvCompany"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stopover at Amsterdam"
+        android:id="@+id/tvSLabel"
+        android:layout_toRightOf="@+id/tcStop"
+        android:layout_below="@+id/tvDLabel"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tcArrive"
+        android:text="02:50 AM"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/tcStop"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arrives at Mumbai"
+        android:id="@+id/tvALabel"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignTop="@+id/tcArrive"
+        android:layout_toEndOf="@+id/tcArrive" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Layover Time: 8 Hrs 40 Min"
+        android:id="@+id/tvLay"
+        android:layout_below="@+id/tcArrive"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$761&#10;Book Now!"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#006600"
+        android:id="@+id/btnBook"
+        android:layout_below="@+id/tvLay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="onSubmit"/>
+
+</RelativeLayout>
